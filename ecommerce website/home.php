@@ -45,34 +45,39 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-1.png" alt="">
+            <img src="images/2ndone.jpeg" alt="">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest smartphones</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>Browse properties offering long-term stays, many at reduced monthly rates.</span>
+            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff; " >Take your longest holiday yet</h3>
+            <a href="shop.php" class="btn">Book Now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-2.png" alt="">
+            <img src="images/3rdone.jpeg" alt="">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest watches</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
+            <h3 style="color:black;font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;">The great getaway, your way</h3>
+            <a href="shop.php" class="btn">Book now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/home-img-3.png" alt="">
+            <img src="images/4thone.jpg" alt="">
          </div>
          <div class="content">
-            <span>upto 50% off</span>
-            <h3>latest headsets</h3>
-            <a href="shop.php" class="btn">shop now</a>
+            <span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
+            <h3 style="color:black; font-family:'Gill Sans';
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+">The great getaway, your way</h3>
+            <a href="shop.php" class="btn">Book now</a>
          </div>
       </div>
 
