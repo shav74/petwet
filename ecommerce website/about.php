@@ -38,7 +38,7 @@ if(isset($_SESSION['user_id'])){
    <div class="row">
 
       <div class="image">
-         <img src="images/about-img.svg" alt="">
+         <img src="images/5thone.jpeg" alt="">
       </div>
 
       <div class="content">
@@ -53,7 +53,7 @@ if(isset($_SESSION['user_id'])){
 
 <section class="reviews">
    
-   <h1 class="heading">client's reviews</h1>
+   <h1 class="heading">Customers Reviews</h1>
 
    <div class="swiper reviews-slider">
 
@@ -69,7 +69,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>shantha</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -82,7 +82,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>janaka</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -95,7 +95,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>samantha</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -108,7 +108,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>udara</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -121,7 +121,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Rizwi</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -134,7 +134,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Nuwan</h3>
       </div>
 
    </div>
@@ -161,7 +161,7 @@ if(isset($_SESSION['user_id'])){
 
 <script>
 
-var swiper = new Swiper(".reviews-slider", {
+/*var swiper = new Swiper(".reviews-slider", {
    loop:true,
    spaceBetween: 20,
    pagination: {
@@ -179,7 +179,19 @@ var swiper = new Swiper(".reviews-slider", {
         slidesPerView: 3,
       },
    },
-});
+});*/
+
+var swiper = new Swiper('.reviews-slider', {
+    navigation: {
+      nextEl: '.swiper-pagination',
+      prevEl: '.swiper-pagination',
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
+  });
 
 </script>
 
