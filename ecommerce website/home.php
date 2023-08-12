@@ -45,57 +45,37 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/4thone.jpg" alt="" style ="
-  border-radius: 200px;
-  background-repeat: repeat;
-  padding: 1px; 
-  width: 350px;
-  height: 350px;  
-"/>
+            <img src="images/4thone.jpg" alt=""/>
 >
          </div>
          <div class="content">
-            <span>Browse properties offering long-term stays, many at reduced monthly rates.</span>
+            <!--<span>Browse properties offering long-term stays, many at reduced monthly rates.</span>!-->
             <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff; " >Take your longest holiday yet</h3>
+  -webkit-text-stroke-color: black;" >Take your longest holiday yet</h3>
             <a href="shop.php" class="btn">Book Now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/3rdone.jpeg" alt=""style ="
-  border-radius: 200px;
-  background-repeat: repeat;
-  padding: 1px; 
-  width: 350px;
-  height: 350px;  
-">
+            <img src="images/3rdone.jpeg" alt="">
          </div>
          <div class="content">
-            <span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
-            <h3 style="color:black;font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;">The great getaway, your way</h3>
+            <!--<span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
+            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;">The great getaway, your way</h3>
             <a href="shop.php" class="btn">Book now</a>
          </div>
       </div>
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/2ndone.jpeg" alt=""style ="
-  border-radius: 200px;
-  background-repeat: repeat;
-  padding: 1px; 
-  width: 350px;
-  height: 350px;  
-">
+            <img src="images/2ndone.jpeg" alt="">
          </div>
          <div class="content">
-            <span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
-            <h3 style="color:black; font-family:'Gill Sans';
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-">The great getaway, your way</h3>
+            <!--<span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
+            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;">The great getaway, your way</h3>
             <a href="shop.php" class="btn">Book now</a>
          </div>
       </div>
@@ -107,6 +87,13 @@ include 'components/wishlist_cart.php';
    </div>
 
 </section>
+<!--style ="
+  border-radius: 150px;
+  background-repeat: repeat;
+  padding: 1px; 
+  width: 350px;
+  height: 350px;  
+"!-->
 
 </div>
 
