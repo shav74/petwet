@@ -327,7 +327,12 @@ section {
 }
 
 .add-products form .flex .inputBox {
+  font-size: 2rem;
   flex: 1 1 25rem;
+}
+
+.add-products form .flex .detailBox {
+  flex: 1 1 50rem;
 }
 
 .add-products form span {

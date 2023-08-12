@@ -111,6 +111,11 @@ if (isset($_GET['delete'])) {
 
       <form action="" method="post" enctype="multipart/form-data">
          <div class="flex">
+
+            <div class="detailBox">
+               <span>Essensials
+               </span>
+            </div>
             <div class="inputBox">
                <span>product name (required)</span>
                <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
