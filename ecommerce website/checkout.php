@@ -72,7 +72,7 @@ if (isset($_POST['order'])) {
 
       <form action="" method="POST">
 
-         <h3>your orders</h3>
+         <h3>Your Bookings</h3>
 
          <div class="display-orders">
             <?php
@@ -99,64 +99,64 @@ if (isset($_POST['order'])) {
             ?>
             <input type="hidden" name="total_products" value="<?= $total_products; ?>">
             <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-            <div class="grand-total">grand total : <span>$
+            <div class="grand-total">Total : <span>$
                   <?= $grand_total; ?>/-
                </span></div>
          </div>
 
-         <h3>place your orders</h3>
+         <h3>Finish Your Payment</h3>
 
          <div class="flex">
             <div class="inputBox">
-               <span>your name :</span>
-               <input type="text" name="name" placeholder="enter your name" class="box" maxlength="20" required>
+               <span>Full Name :</span>
+               <input type="text" name="name" placeholder="Enter Full Name" class="box" maxlength="20" required>
             </div>
             <div class="inputBox">
-               <span>your number :</span>
-               <input type="number" name="number" placeholder="enter your number" class="box" min="0" max="9999999999"
+               <span>Mobile Number :</span>
+               <input type="number" name="number" placeholder="Enter your number" class="box" min="0" max="9999999999"
                   onkeypress="if(this.value.length == 10) return false;" required>
             </div>
             <div class="inputBox">
-               <span>your email :</span>
+               <span>Email :</span>
                <input type="email" name="email" placeholder="enter your email" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>payment method :</span>
+               <span>Payment Method :</span>
                <select name="method" class="box" required>
-                  <option value="cash on delivery">cash on delivery</option>
-                  <option value="credit card">credit card</option>
-                  <option value="paytm">paytm</option>
-                  <option value="paypal">paypal</option>
+                  <option value="cash on delivery">KoKo Pay</option>
+                  <option value="credit card">Credit Card</option>
+                  <option value="paytm">Paytm</option>
+                  <option value="paypal">Paypal</option>
                </select>
             </div>
             <div class="inputBox">
-               <span>address line 01 :</span>
+               <span>Address line 01 :</span>
                <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>address line 02 :</span>
+               <span>Address line 02 :</span>
                <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>city :</span>
-               <input type="text" name="city" placeholder="e.g. mumbai" class="box" maxlength="50" required>
+               <span>City :</span>
+               <input type="text" name="city" placeholder="e.g. Colombo" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>state :</span>
-               <input type="text" name="state" placeholder="e.g. maharashtra" class="box" maxlength="50" required>
+               <span>Check In Time :</span>
+               <input type="text" name="state" placeholder="" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>country :</span>
-               <input type="text" name="country" placeholder="e.g. India" class="box" maxlength="50" required>
+               <span>Check in Date :</span>
+               <input type="text" name="country" placeholder="" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>pin code :</span>
-               <input type="number" min="0" name="pin_code" placeholder="e.g. 123456" min="0" max="999999"
+               <span>Order Number :</span>
+               <input type="number" min="0" name="pin_code" placeholder="" min="0" max="999999"
                   onkeypress="if(this.value.length == 6) return false;" class="box" required>
             </div>
          </div>
 
-         <input type="submit" name="order" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>" value="place order">
+         <input type="submit" name="order" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>" value="Proceed To Payout ">
 
       </form>
 
