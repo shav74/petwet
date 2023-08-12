@@ -371,8 +371,8 @@ section {
 .show-products .box-container .box {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
-  border-radius: 0.5rem;
-  border: var(--border);
+  border-radius: 1rem;
+  /* border: var(--border); */
   padding: 2rem;
 }
 
