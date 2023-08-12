@@ -166,88 +166,204 @@ if (isset($_GET['delete'])) {
             </div>
 
             <div class="detailBox">
-               <span>Extra Details</span>
+               <span>Extra Features</span>
+            </div>
+
+            <div class="inputBox-large">
+               <span>Select facilities you offer</span>
+               <div class="box">
+                  <input type="checkbox" name="#" id="#"> Swimming pool <br>
+                  <input type="checkbox" name="#" id="#"> Spa <br>
+                  <input type="checkbox" name="#" id="#"> Air conditioning <br>
+                  <input type="checkbox" name="#" id="#"> Family rooms <br>
+                  <input type="checkbox" name="#" id="#"> Fitness center <br>
+                  <input type="checkbox" name="#" id="#"> Bar <br>
+                  <input type="checkbox" name="#" id="#"> Restaurant <br>
+               </div>
             </div>
 
             <div class="inputBox">
-               <span>product price (required)</span>
-               <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price"
-                  onkeypress="if(this.value.length == 10) return false;" name="price">
+               <span>Is breakfast available in your place?</span>
+               <div class="box">
+                  <input type="radio" name="#" id="#"> Yes <br>
+                  <input type="radio" name="#" id="#"> No<br>
+               </div>
             </div>
+
             <div class="inputBox">
-               <span>image 01 (required)</span>
+               <span>Is parking available?</span>
+               <div class="box">
+                  <input type="radio" name="#" id="#"> Yes <br>
+                  <input type="radio" name="#" id="#"> No<br>
+               </div>
+            </div>
+
+            <div class="inputBox-large">
+               <span>Select Languages</span>
+               <div class="box">
+                  <input type="checkbox" name="#" id="#"> English <br>
+                  <input type="checkbox" name="#" id="#"> Sinhala <br>
+                  <input type="checkbox" name="#" id="#"> Tamil <br>
+                  <input type="checkbox" name="#" id="#"> Hindi <br>
+                  <input type="checkbox" name="#" id="#"> French <br>
+                  <input type="checkbox" name="#" id="#"> Add others <br>
+               </div>
+            </div>
+
+            <div class="detailBox">
+               <span>Check In and Check Out</span>
+            </div>
+
+            <div class="detailBox" style="margin-bottom: 0;">
+               <span>Check In</span>
+            </div>
+
+            <div class="inputBox">
+               <span>From</span>
+               <select name="type" id="type" class="box">
+                  <option value="#">12 PM</option>
+                  <option value="#">1 PM</option>
+                  <option value="#">2 PM</option>
+                  <option value="#">3 PM</option>
+                  <option value="#">4 PM</option>
+                  <option value="#">5 PM</option>
+                  <option value="#">6 PM</option>
+                  <option value="#">7 PM</option>
+                  <option value="#">6 PM</option>
+               </select>
+            </div>
+
+            <div class="inputBox">
+               <span>To</span>
+               <select name="type" id="type" class="box">
+                  <option value="#">12 PM</option>
+                  <option value="#">1 PM</option>
+                  <option value="#">2 PM</option>
+                  <option value="#">3 PM</option>
+                  <option value="#">4 PM</option>
+                  <option value="#">5 PM</option>
+                  <option value="#">6 PM</option>
+                  <option value="#">7 PM</option>
+                  <option value="#">6 PM</option>
+               </select>
+            </div>
+
+            <div class="detailBox" style="margin-bottom: 0;">
+               <span>Check Out</span>
+            </div>
+
+            <div class="inputBox">
+               <span>From</span>
+               <select name="type" id="type" class="box">
+                  <option value="#">12 PM</option>
+                  <option value="#">1 PM</option>
+                  <option value="#">2 PM</option>
+                  <option value="#">3 PM</option>
+                  <option value="#">4 PM</option>
+                  <option value="#">5 PM</option>
+                  <option value="#">6 PM</option>
+                  <option value="#">7 PM</option>
+                  <option value="#">6 PM</option>
+               </select>
+            </div>
+
+            <div class="inputBox">
+               <span>To</span>
+               <select name="type" id="type" class="box">
+                  <option value="#">12 PM</option>
+                  <option value="#">1 PM</option>
+                  <option value="#">2 PM</option>
+                  <option value="#">3 PM</option>
+                  <option value="#">4 PM</option>
+                  <option value="#">5 PM</option>
+                  <option value="#">6 PM</option>
+                  <option value="#">7 PM</option>
+                  <option value="#">6 PM</option>
+               </select>
+            </div>
+
+            <div class="inputBox">
+               <span>Are children allowed?</span>
+               <div class="box">
+                  <input type="radio" name="#" id="#"> Yes <br>
+                  <input type="radio" name="#" id="#"> No<br>
+               </div>
+            </div>
+
+            <div class="inputBox">
+               <span>Are pets allowed?</span>
+               <div class="box">
+                  <input type="radio" name="#" id="#"> Yes <br>
+                  <input type="radio" name="#" id="#"> No<br>
+               </div>
+            </div>
+
+            <!-- room details -->
+
+            <div class="detailBox">
+               <span>Add room details</span>
+            </div>
+
+            <div class="inputBox">
+               <span>Unit type</span>
+               <select name="type" id="type" class="box">
+                  <option value="#">Single</option>
+                  <option value="#">Doube</option>
+                  <option value="#">Twin</option>
+                  <option value="#">Tripe</option>
+                  <option value="#">Quad</option>
+                  <option value="#">Family</option>
+                  <option value="#">Suite</option>
+               </select>
+            </div>
+
+            <div class="inputBox">
+               <span>How many beds available in this room?</span>
+               <input type="number" max="10" class="box" placeholder="enter bed count">
+            </div>
+
+            <div class="inputBox">
+               <span>How many guests can stay in this room?</span>
+               <input type="number" max="10" class="box" placeholder="enter number of people">
+            </div>
+
+            <div class="inputBox">
+               <span>How big is this room?</span>
+               <input type="number" max="10o" class="box" placeholder="square meters">
+            </div>
+
+            <div class="detailBox">
+               <span>Price</span>
+            </div>
+
+            <div class="detailBox">
+               <span>Policies</span>
+            </div>
+
+            <div class="detailBox">
+               <span>Upload Photos</span>
+            </div>
+
+            <div class="inputBox-large">
+               <span>select and upload images here</span>
                <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
                   required>
             </div>
-            <div class="inputBox">
-               <span>image 02 (required)</span>
-               <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
-                  required>
+
+            <div class="detailBox">
+               <span>I have read and I accept all terms n conditions</span>
+               <div class="box">
+                  <input type="radio" name="#" id="#"> Yes <br>
+                  <input type="radio" name="#" id="#"> No<br>
+               </div>
             </div>
-            <div class="inputBox">
-               <span>image 03 (required)</span>
-               <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
-                  required>
-            </div>
-            <div class="inputBox">
-               <span>product details (required)</span>
-               <textarea name="details" placeholder="enter product details" class="box" required maxlength="500"
-                  cols="30" rows="10"></textarea>
-            </div>
+
          </div>
 
          <input type="submit" value="add product" class="btn" name="add_product">
       </form>
 
    </section>
-
-   <section class="show-products">
-
-      <h1 class="heading">products added</h1>
-
-      <div class="box-container">
-
-         <?php
-         $select_products = $conn->prepare("SELECT * FROM `products`");
-         $select_products->execute();
-         if ($select_products->rowCount() > 0) {
-            while ($fetch_products = $select_products->fetch(PDO::FETCH_ASSOC)) {
-               ?>
-               <div class="box">
-                  <img src="../uploaded_img/<?= $fetch_products['image_01']; ?>" alt="">
-                  <div class="name">
-                     <?= $fetch_products['name']; ?>
-                  </div>
-                  <div class="price">$<span>
-                        <?= $fetch_products['price']; ?>
-                     </span>/-</div>
-                  <div class="details"><span>
-                        <?= $fetch_products['details']; ?>
-                     </span></div>
-                  <div class="flex-btn">
-                     <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
-                     <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn"
-                        onclick="return confirm('delete this product?');">delete</a>
-                  </div>
-               </div>
-               <?php
-            }
-         } else {
-            echo '<p class="empty">no products added yet!</p>';
-         }
-         ?>
-
-      </div>
-
-   </section>
-
-
-
-
-
-
-
-
    <script src="../js/admin_script.js"></script>
 
 </body>
