@@ -112,14 +112,63 @@ if (isset($_GET['delete'])) {
       <form action="" method="post" enctype="multipart/form-data">
          <div class="flex">
 
-            <div class="detailBox">
-               <span>Essensials
-               </span>
+            <div class="detailBox" style="margin-top:0vh;">
+               <span>Essencials</span>
             </div>
-            <div class="inputBox">
-               <span>product name (required)</span>
+
+            <div class="inputBox-large">
+               <span>Property Name</span>
                <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
             </div>
+
+            <div class="inputBox">
+               <span>Property Type</span>
+               <select name="type" id="type" class="box">
+                  <option value="hotel" selected>Hotel</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="other">other</option>
+               </select>
+            </div>
+
+            <div class="inputBox">
+               <span>Property Category</span>
+               <select name="type" id="type" class="box">
+                  <option value="" disabled>selecty category</option>
+                  <option value="#">Guest House</option>
+                  <option value="hotel">Hotel</option>
+                  <option value="#">Bed and breakfast</option>
+                  <option value="#">Hostel</option>
+                  <option value="#">Inn</option>
+                  <option value="#">Motel</option>
+                  <option value="#">Resort</option>
+                  <option value="#">Lodge</option>
+                  <option value="#">Other</option>
+               </select>
+            </div>
+
+            <div class="detailBox">
+               <span>Location Details</span>
+            </div>
+
+            <div class="inputBox-large">
+               <span>Address</span>
+               <input type="text" class="box" placeholder="enter address of the property" name="price">
+            </div>
+
+            <div class="inputBox">
+               <span>Zip-Code</span>
+               <input type="text" class="box" placeholder="Postal Code">
+            </div>
+
+            <div class="inputBox">
+               <span>City</span>
+               <input type="text" class="box" placeholder="city name">
+            </div>
+
+            <div class="detailBox">
+               <span>Extra Details</span>
+            </div>
+
             <div class="inputBox">
                <span>product price (required)</span>
                <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price"
