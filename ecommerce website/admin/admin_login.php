@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
             oninput="this.value = this.value.replace(/\s/g, '')">
          <input type="submit" value="login now" class="btn" name="submit"><br><br>
          <a href="register_admin.php">click hear to regisrer as a seller</a><br><br>
-         <a href="/ecommerce website/home.php">Back to Homepage</a>
+         <a href="../home.php">Back to Homepage</a>
       </form>
 
 
