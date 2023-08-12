@@ -45,7 +45,14 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/4thone.jpg" alt="">
+            <img src="images/4thone.jpg" alt="" style ="
+  border-radius: 200px;
+  background-repeat: repeat;
+  padding: 1px; 
+  width: 350px;
+  height: 350px;  
+"/>
+>
          </div>
          <div class="content">
             <span>Browse properties offering long-term stays, many at reduced monthly rates.</span>
@@ -57,7 +64,13 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/3rdone.jpeg" alt="">
+            <img src="images/3rdone.jpeg" alt=""style ="
+  border-radius: 200px;
+  background-repeat: repeat;
+  padding: 1px; 
+  width: 350px;
+  height: 350px;  
+">
          </div>
          <div class="content">
             <span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
@@ -69,7 +82,13 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/2ndone.jpeg" alt="">
+            <img src="images/2ndone.jpeg" alt=""style ="
+  border-radius: 200px;
+  background-repeat: repeat;
+  padding: 1px; 
+  width: 350px;
+  height: 350px;  
+">
          </div>
          <div class="content">
             <span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
