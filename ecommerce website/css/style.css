@@ -284,13 +284,23 @@ section {
 
 .category .slide {
   margin-bottom: 5rem;
-  box-shadow: var(--box-shadow);
-  border: var(--border);
+  /*box-shadow: var(--box-shadow);
+  border: var(--border);*/  
   text-align: center;
-  padding: 2rem;
+  /*padding: 1rem;
+  background: var(--white);
+  border-radius: 0.5rem;*/
+}
+/*.category .slide .TTK{
+  margin-bottom: 5rem;
+  /*box-shadow: var(--box-shadow);
+  border: var(--border); 
+  height: 300px;
+  width: 300px;
+  padding: 1rem;
   background: var(--white);
   border-radius: 0.5rem;
-}
+}*/
 
 .category .slide:hover {
   background-color: var(--black);

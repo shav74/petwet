@@ -45,8 +45,8 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/4thone.jpg" alt=""/>
->
+            <img src="images/4thone.jpg" alt="" style="border-radius: 100rem;"/>
+
          </div>
          <div class="content">
             <!--<span>Browse properties offering long-term stays, many at reduced monthly rates.</span>!-->
@@ -58,7 +58,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/3rdone.jpeg" alt="">
+            <img src="images/3rdone.jpeg" alt="" style="border-radius: 100rem;">
          </div>
          <div class="content">
             <!--<span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
@@ -70,7 +70,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/2ndone.jpeg" alt="">
+            <img src="images/2ndone.jpeg" alt="" style="border-radius: 100rem;">
          </div>
          <div class="content">
             <!--<span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
@@ -106,42 +106,42 @@ include 'components/wishlist_cart.php';
    <div class="swiper-wrapper">
 
    <a href="category.php?category=laptop" class="swiper-slide slide">
-      <img src="images/icon-1.png" alt="">
+      <img src="images/7thone.jpeg" alt="" class="TTK">
       <h3>Farm Stays</h3>
    </a>
 
    <a href="category.php?category=tv" class="swiper-slide slide">
-      <img src="images/icon-2.png" alt="">
+      <img src="images/8thone.jpeg" alt="">
       <h3>Boats</h3>
    </a>
 
    <a href="category.php?category=camera" class="swiper-slide slide">
-      <img src="images/icon-3.png" alt="">
+      <img src="images/9thone.jpeg" alt="">
       <h3>Ryokans</h3>
    </a>
 
    <a href="category.php?category=mouse" class="swiper-slide slide">
-      <img src="images/icon-4.png" alt="">
+      <img src="images/10thone.jpeg" alt="">
       <h3>Luxury Tents</h3>
    </a>
 
    <a href="category.php?category=fridge" class="swiper-slide slide">
-      <img src="images/icon-5.png" alt="">
+      <img src="images/11thone.jpeg" alt="">
       <h3>Riads</h3>
    </a>
 
    <a href="category.php?category=washing" class="swiper-slide slide">
-      <img src="images/icon-6.png" alt="">
+      <img src="images/12thone.jpeg" alt="">
       <h3>Holiday Parks</h3>
    </a>
 
    <a href="category.php?category=smartphone" class="swiper-slide slide">
-      <img src="images/icon-7.png" alt="">
+      <img src="images/13thone.jpeg" alt="">
       <h3>Home stays</h3>
    </a>
 
    <a href="category.php?category=watch" class="swiper-slide slide">
-      <img src="images/icon-8.png" alt="">
+      <img src="images/14thone.jpeg" alt="">
       <h3>Campsites</h3>
    </a>
 
