@@ -5,7 +5,7 @@
   --orange: #43e77c;
   --red: #e74c3c;
   --black: #333;
-  --white: #fff;
+  --white: #ffffff;
   --light-color: #666;
   --light-bg: #eee;
   --border: 0.2rem solid var(--black);
@@ -232,7 +232,7 @@ section {
 }
 
 .home-bg {
-  background: url(../images/home-bg.jpg) no-repeat;
+  background: url(../images/1stone.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
