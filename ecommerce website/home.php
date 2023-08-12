@@ -45,7 +45,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/2ndone.jpeg" alt="">
+            <img src="images/4thone.jpg" alt="">
          </div>
          <div class="content">
             <span>Browse properties offering long-term stays, many at reduced monthly rates.</span>
@@ -69,7 +69,7 @@ include 'components/wishlist_cart.php';
 
       <div class="swiper-slide slide">
          <div class="image">
-            <img src="images/4thone.jpg" alt="">
+            <img src="images/2ndone.jpeg" alt="">
          </div>
          <div class="content">
             <span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>
@@ -93,7 +93,7 @@ include 'components/wishlist_cart.php';
 
 <section class="category">
 
-   <h1 class="heading">shop by category</h1>
+   <h1 class="heading">Browse by property type</h1>
 
    <div class="swiper category-slider">
 
@@ -101,42 +101,42 @@ include 'components/wishlist_cart.php';
 
    <a href="category.php?category=laptop" class="swiper-slide slide">
       <img src="images/icon-1.png" alt="">
-      <h3>laptop</h3>
+      <h3>Farm Stays</h3>
    </a>
 
    <a href="category.php?category=tv" class="swiper-slide slide">
       <img src="images/icon-2.png" alt="">
-      <h3>tv</h3>
+      <h3>Boats</h3>
    </a>
 
    <a href="category.php?category=camera" class="swiper-slide slide">
       <img src="images/icon-3.png" alt="">
-      <h3>camera</h3>
+      <h3>Ryokans</h3>
    </a>
 
    <a href="category.php?category=mouse" class="swiper-slide slide">
       <img src="images/icon-4.png" alt="">
-      <h3>mouse</h3>
+      <h3>Luxury Tents</h3>
    </a>
 
    <a href="category.php?category=fridge" class="swiper-slide slide">
       <img src="images/icon-5.png" alt="">
-      <h3>fridge</h3>
+      <h3>Riads</h3>
    </a>
 
    <a href="category.php?category=washing" class="swiper-slide slide">
       <img src="images/icon-6.png" alt="">
-      <h3>washing machine</h3>
+      <h3>Holiday Parks</h3>
    </a>
 
    <a href="category.php?category=smartphone" class="swiper-slide slide">
       <img src="images/icon-7.png" alt="">
-      <h3>smartphone</h3>
+      <h3>Home stays</h3>
    </a>
 
    <a href="category.php?category=watch" class="swiper-slide slide">
       <img src="images/icon-8.png" alt="">
-      <h3>watch</h3>
+      <h3>Campsites</h3>
    </a>
 
    </div>
@@ -207,14 +207,14 @@ include 'components/wishlist_cart.php';
 
 <script>
 
-var swiper = new Swiper(".home-slider", {
+/*var swiper = new Swiper(".home-slider", {
    loop:true,
    spaceBetween: 20,
    pagination: {
       el: ".swiper-pagination",
       clickable:true,
     },
-});
+});*/
 
  var swiper = new Swiper(".category-slider", {
    loop:true,
@@ -258,6 +258,18 @@ var swiper = new Swiper(".products-slider", {
       },
    },
 });
+
+var swiper = new Swiper('.home-slider', {
+    navigation: {
+      nextEl: '.swiper-pagination',
+      prevEl: '.swiper-pagination',
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true,
+  },
+  });
 
 </script>
 
