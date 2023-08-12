@@ -130,11 +130,11 @@ if (isset($_POST['order'])) {
                </select>
             </div>
             <div class="inputBox">
-               <span>Address line 01 :</span>
+               <span>Check In Date :</span>
                <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>Address line 02 :</span>
+               <span>Check out Date :</span>
                <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
@@ -146,7 +146,7 @@ if (isset($_POST['order'])) {
                <input type="text" name="state" placeholder="" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
-               <span>Check in Date :</span>
+               <span>No of People :</span>
                <input type="text" name="country" placeholder="" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
@@ -156,7 +156,8 @@ if (isset($_POST['order'])) {
             </div>
          </div>
 
-         <input type="submit" name="order" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>" value="Proceed To Payout ">
+         <input type="submit" name="order" class="btn <?= ($grand_total > 1) ? '' : 'disabled'; ?>"
+            value="Proceed To Payout ">
 
       </form>
 

@@ -118,12 +118,12 @@ if (isset($_GET['delete'])) {
 
             <div class="inputBox-large">
                <span>Property Name</span>
-               <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
+               <input type="text" class="box" required maxlength="100" placeholder="enter property name" name="name">
             </div>
 
             <div class="inputBox-large">
-               <span>product details</span>
-               <textarea name="details" placeholder="enter product details" class="box" required maxlength="500"
+               <span>property description</span>
+               <textarea name="details" placeholder="enter property description" class="box" required maxlength="500"
                   cols="30" rows="10"></textarea>
             </div>
 
@@ -343,8 +343,8 @@ if (isset($_GET['delete'])) {
             </div>
 
             <div class="inputBox">
-               <span>product price (required)</span>
-               <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price"
+               <span>Room price (required)</span>
+               <input type="number" min="0" class="box" required max="9999999999" placeholder="enter room price"
                   onkeypress="if(this.value.length == 10) return false;" name="price">
             </div>
 
@@ -358,19 +358,16 @@ if (isset($_GET['delete'])) {
 
             <div class="inputBox-large">
                <span>Upload cover image</span>
-               <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
-                  required>
+               <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
             </div>
 
             <div class="inputBox">
                <span>additional Images</span>
-               <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
-                  required>
+               <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
             </div>
             <div class="inputBox">
                <span>image 3(required)</span>
-               <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
-                  required>
+               <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box">
             </div>
 
             <div class="detailBox">
@@ -383,7 +380,7 @@ if (isset($_GET['delete'])) {
 
          </div>
 
-         <input type="submit" value="add product" class="btn" name="add_product">
+         <input type="submit" value="List Property" class="btn" name="add_product">
       </form>
 
    </section>

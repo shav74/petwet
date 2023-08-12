@@ -60,7 +60,7 @@ if (!isset($admin_id)) {
                <?= $total_pendings; ?><span>/-</span>
             </h3>
             <p>total pendings</p>
-            <a href="placed_orders.php" class="btn">see orders</a>
+            <a href="placed_orders.php" class="btn"> Reservations</a>
          </div>
 
          <div class="box">

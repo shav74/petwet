@@ -62,7 +62,7 @@ if (isset($_GET['delete'])) {
                <div class="box">
                   <h1 style="font-size: large;">Details</h1>
                   <br>
-                  <p> placed on : <span>
+                  <p> Booked on : <span>
                         <?= $fetch_orders['placed_on']; ?>
                      </span> </p>
                   <p> name : <span>
