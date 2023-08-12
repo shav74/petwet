@@ -25,6 +25,7 @@ if (isset($message)) {
          <a href="orders.php">Bookings</a>
          <a href="shop.php">Stays</a>
          <a href="contact.php">Contact</a>
+         <a href="admin/admin_login.php">List Your Property</a>
       </nav>
 
       <div class="icons">
