@@ -59,8 +59,9 @@ section {
 .heading {
   font-size: 4rem;
   color: var(--black);
+  font-weight: bolder;
   margin-bottom: 2rem;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -274,7 +275,7 @@ section {
 
 .dashboard .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
   justify-content: center;
   align-items: flex-start;
@@ -283,7 +284,7 @@ section {
 .dashboard .box-container .box {
   padding: 2rem;
   text-align: center;
-  border: var(--border);
+  /* border: var(--border); */
   box-shadow: var(--box-shadow);
   border-radius: 0.5rem;
   background-color: var(--white);

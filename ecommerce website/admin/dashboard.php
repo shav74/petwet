@@ -42,7 +42,7 @@ if (!isset($admin_id)) {
             <p>
                <?= $fetch_profile['name']; ?>
             </p>
-            <a href="update_profile.php" class="btn">update profile</a>
+            <a href="update_profile.php" class="btn">update</a>
          </div>
 
          <div class="box">
