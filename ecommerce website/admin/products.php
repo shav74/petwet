@@ -121,6 +121,12 @@ if (isset($_GET['delete'])) {
                <input type="text" class="box" required maxlength="100" placeholder="enter product name" name="name">
             </div>
 
+            <div class="inputBox-large">
+               <span>product details</span>
+               <textarea name="details" placeholder="enter product details" class="box" required maxlength="500"
+                  cols="30" rows="10"></textarea>
+            </div>
+
             <div class="inputBox">
                <span>Property Type</span>
                <select name="type" id="type" class="box">
@@ -336,6 +342,12 @@ if (isset($_GET['delete'])) {
                <span>Price</span>
             </div>
 
+            <div class="inputBox">
+               <span>product price (required)</span>
+               <input type="number" min="0" class="box" required max="9999999999" placeholder="enter product price"
+                  onkeypress="if(this.value.length == 10) return false;" name="price">
+            </div>
+
             <div class="detailBox">
                <span>Policies</span>
             </div>
@@ -345,8 +357,19 @@ if (isset($_GET['delete'])) {
             </div>
 
             <div class="inputBox-large">
-               <span>select and upload images here</span>
+               <span>Upload cover image</span>
                <input type="file" name="image_01" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
+                  required>
+            </div>
+
+            <div class="inputBox">
+               <span>additional Images</span>
+               <input type="file" name="image_02" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
+                  required>
+            </div>
+            <div class="inputBox">
+               <span>image 3(required)</span>
+               <input type="file" name="image_03" accept="image/jpg, image/jpeg, image/png, image/webp" class="box"
                   required>
             </div>
 
