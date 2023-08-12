@@ -71,12 +71,12 @@ if (isset($_GET['delete'])) {
                   <p> number : <span>
                         <?= $fetch_orders['number']; ?>
                      </span> </p>
-                  <p> address : <span>
+                  <p> check in date : <span>
                         <?= $fetch_orders['address']; ?>
                      </span> </p>
-                  <p> total products : <span>
+                  <!-- <p> total products : <span>
                         <?= $fetch_orders['total_products']; ?>
-                     </span> </p>
+                     </span> </p> -->
                   <p> total price : <span>$
                         <?= $fetch_orders['total_price']; ?>/-
                      </span> </p>
