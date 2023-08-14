@@ -80,10 +80,8 @@ if (isset($_GET['delete'])) {
    $delete_cart->execute([$delete_id]);
    $delete_wishlist = $conn->prepare("DELETE FROM `wishlist` WHERE pid = ?");
    $delete_wishlist->execute([$delete_id]);
-   header('location:products.php');
+   header('location:manage-products.php');
 }
-
-
 ?>
 
 <!DOCTYPE html>
