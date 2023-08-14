@@ -4,11 +4,12 @@ include 'components/connect.php';
 
 session_start();
 
-if(isset($_SESSION['user_id'])){
+if (isset($_SESSION['user_id'])) {
    $user_id = $_SESSION['user_id'];
-}else{
+} else {
    $user_id = '';
-};
+}
+;
 
 include 'components/wishlist_cart.php';
 
@@ -16,6 +17,7 @@ include 'components/wishlist_cart.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +25,7 @@ include 'components/wishlist_cart.php';
    <title>home</title>
 
    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-   
+
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -31,253 +33,337 @@ include 'components/wishlist_cart.php';
    <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-   
-<?php include 'components/user_header.php'; ?>
 
-<div class="home-bg">
+   <?php include 'components/user_header.php'; ?>
 
-<section class="home">
+   <div>
 
-   <div class="swiper home-slider">
-   
-   <div class="swiper-wrapper">
 
-      <div class="swiper-slide slide">
-         <div class="image">
-            <img src="images/4thone.jpg" alt="" style="border-radius: 100rem;"/>
-
-         </div>
-         <div class="content">
-            <!--<span>Browse properties offering long-term stays, many at reduced monthly rates.</span>!-->
-            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;" >Take your longest holiday yet</h3>
-            <a href="shop.php" class="btn">Book Now</a>
-         </div>
+      <div class="info">
+         <span class="title-main">Best Deals </span>
+         <span class="title-sub">from your favourite hotels</span><br>
+         <span id="search-des">
+            Try searching for cities, hotels, or even locations!
+         </span>
       </div>
 
-      <div class="swiper-slide slide">
-         <div class="image">
-            <img src="images/3rdone.jpeg" alt="" style="border-radius: 100rem;">
-         </div>
-         <div class="content">
-            <!--<span>Save at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
-            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;">The great getaway, your way</h3>
-            <a href="shop.php" class="btn">Book now</a>
-         </div>
+      <div class="book-info">
+         <span class="book-text">Book your next </span>
+         <span class="book-change-name" id="book-change" style="color: #749354;">Hotel</span><br>
       </div>
 
-      <div class="swiper-slide slide">
-         <div class="image">
-            <img src="images/2ndone.jpeg" alt="" style="border-radius: 100rem;">
+      <div class="date-wrapper">
+         <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Business Name or Location" />
          </div>
-         <div class="content">
-            <!--<span>ave at least 15% on stays worldwide, from relaxing retreats to off-grid adventures</span>!-->
-            <h3 style="color:black; font-family:'Gill Sans'; -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;">The great getaway, your way</h3>
-            <a href="shop.php" class="btn">Book now</a>
+         <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+               placeholder="Check In">
          </div>
+         <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input name="date" type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+               placeholder="Check Out">
+         </div>
+         <div class="search-icon">
+            <a href="" target="_blank" hidden></a>
+            <button name="search-button">Search</button>
+         </div>
+      </div><br><br>
+      <section class="category">
+
+         <h1 class="heading">Browse by property type</h1>
+
+         <div class="swiper category-slider">
+
+            <div class="swiper-wrapper">
+
+               <a href="category.php?category=laptop" class="swiper-slide slide">
+                  <img src="images/7thone.jpeg" alt="" class="TTK">
+                  <h3>Farm Stays</h3>
+               </a>
+
+               <a href="category.php?category=tv" class="swiper-slide slide">
+                  <img src="images/8thone.jpeg" alt="">
+                  <h3>Boats</h3>
+               </a>
+
+               <a href="category.php?category=camera" class="swiper-slide slide">
+                  <img src="images/9thone.jpeg" alt="">
+                  <h3>Ryokans</h3>
+               </a>
+
+               <a href="category.php?category=mouse" class="swiper-slide slide">
+                  <img src="images/10thone.jpeg" alt="">
+                  <h3>Luxury Tents</h3>
+               </a>
+
+               <a href="category.php?category=fridge" class="swiper-slide slide">
+                  <img src="images/11thone.jpeg" alt="">
+                  <h3>Riads</h3>
+               </a>
+
+               <a href="category.php?category=washing" class="swiper-slide slide">
+                  <img src="images/12thone.jpeg" alt="">
+                  <h3>Holiday Parks</h3>
+               </a>
+
+               <a href="category.php?category=smartphone" class="swiper-slide slide">
+                  <img src="images/13thone.jpeg" alt="">
+                  <h3>Home stays</h3>
+               </a>
+
+               <a href="category.php?category=watch" class="swiper-slide slide">
+                  <img src="images/14thone.jpeg" alt="">
+                  <h3>Campsites</h3>
+               </a>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+         </div>
+
+      </section>
+   </div>
+
+
+   <section class="home-products">
+
+      <h1 class="heading-swipers"><span style="color: #749354;">OfferBay</span> Specials</h1>
+
+      <div class="swiper products-slider">
+
+         <div class="swiper-wrapper">
+
+            <?php
+            $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+            $select_products->execute();
+            if ($select_products->rowCount() > 0) {
+               while ($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)) {
+                  ?>
+                  <form action="" method="post" class="swiper-slide slide">
+                     <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
+                     <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
+                     <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
+                     <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
+                     <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                     <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
+                     <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+                     <div class="name">
+                        <?= $fetch_product['name']; ?>
+                     </div>
+                     <div class="flex">
+                        <div class="price"><span>$</span>
+                           <?= $fetch_product['price']; ?><span>/-</span>
+                        </div>
+                        <input type="number" name="qty" class="qty" min="1" max="99"
+                           onkeypress="if(this.value.length == 2) return false;" value="1">
+                     </div>
+                     <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+                  </form>
+                  <?php
+               }
+            } else {
+               echo '<p class="empty">no products added yet!</p>';
+            }
+            ?>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
       </div>
 
-   </div>
+   </section>
 
-      <div class="swiper-pagination"></div>
 
-   </div>
 
-</section>
-<!--style ="
-  border-radius: 150px;
-  background-repeat: repeat;
-  padding: 1px; 
-  width: 350px;
-  height: 350px;  
-"!-->
+   <section class="home-products">
 
-</div>
+      <h1 class="heading-swipers"><span style="color: #749354;">Deals</span> of the day</h1>
 
-<section class="category">
+      <div class="swiper products-slider">
 
-   <h1 class="heading">Browse by property type</h1>
+         <div class="swiper-wrapper">
 
-   <div class="swiper category-slider">
+            <?php
+            $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+            $select_products->execute();
+            if ($select_products->rowCount() > 0) {
+               while ($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)) {
+                  ?>
+                  <form action="" method="post" class="swiper-slide slide">
+                     <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
+                     <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
+                     <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
+                     <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
+                     <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                     <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
+                     <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+                     <div class="name">
+                        <?= $fetch_product['name']; ?>
+                     </div>
+                     <div class="flex">
+                        <div class="price"><span>$</span>
+                           <?= $fetch_product['price']; ?><span>/-</span>
+                        </div>
+                        <input type="number" name="qty" class="qty" min="1" max="99"
+                           onkeypress="if(this.value.length == 2) return false;" value="1">
+                     </div>
+                     <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+                  </form>
+                  <?php
+               }
+            } else {
+               echo '<p class="empty">no products added yet!</p>';
+            }
+            ?>
 
-   <div class="swiper-wrapper">
+         </div>
 
-   <a href="category.php?category=laptop" class="swiper-slide slide">
-      <img src="images/7thone.jpeg" alt="" class="TTK">
-      <h3>Farm Stays</h3>
-   </a>
+         <div class="swiper-pagination"></div>
 
-   <a href="category.php?category=tv" class="swiper-slide slide">
-      <img src="images/8thone.jpeg" alt="">
-      <h3>Boats</h3>
-   </a>
-
-   <a href="category.php?category=camera" class="swiper-slide slide">
-      <img src="images/9thone.jpeg" alt="">
-      <h3>Ryokans</h3>
-   </a>
-
-   <a href="category.php?category=mouse" class="swiper-slide slide">
-      <img src="images/10thone.jpeg" alt="">
-      <h3>Luxury Tents</h3>
-   </a>
-
-   <a href="category.php?category=fridge" class="swiper-slide slide">
-      <img src="images/11thone.jpeg" alt="">
-      <h3>Riads</h3>
-   </a>
-
-   <a href="category.php?category=washing" class="swiper-slide slide">
-      <img src="images/12thone.jpeg" alt="">
-      <h3>Holiday Parks</h3>
-   </a>
-
-   <a href="category.php?category=smartphone" class="swiper-slide slide">
-      <img src="images/13thone.jpeg" alt="">
-      <h3>Home stays</h3>
-   </a>
-
-   <a href="category.php?category=watch" class="swiper-slide slide">
-      <img src="images/14thone.jpeg" alt="">
-      <h3>Campsites</h3>
-   </a>
-
-   </div>
-
-   <div class="swiper-pagination"></div>
-
-   </div>
-
-</section>
-
-<section class="home-products">
-
-   <h1 class="heading">latest products</h1>
-
-   <div class="swiper products-slider">
-
-   <div class="swiper-wrapper">
-
-   <?php
-     $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6"); 
-     $select_products->execute();
-     if($select_products->rowCount() > 0){
-      while($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)){
-   ?>
-   <form action="" method="post" class="swiper-slide slide">
-      <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
-      <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
-      <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
-      <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
-      <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
-      <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
-      <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
-      <div class="name"><?= $fetch_product['name']; ?></div>
-      <div class="flex">
-         <div class="price"><span>$</span><?= $fetch_product['price']; ?><span>/-</span></div>
-         <input type="number" name="qty" class="qty" min="1" max="99" onkeypress="if(this.value.length == 2) return false;" value="1">
       </div>
-      <input type="submit" value="add to cart" class="btn" name="add_to_cart">
-   </form>
-   <?php
-      }
-   }else{
-      echo '<p class="empty">no products added yet!</p>';
-   }
-   ?>
 
-   </div>
-
-   <div class="swiper-pagination"></div>
-
-   </div>
-
-</section>
+   </section>
 
 
+   <section class="home-products">
+
+      <h1 class="heading-swipers"><span style="color: #749354;">Trending</span> Places</h1>
+
+      <div class="swiper products-slider">
+
+         <div class="swiper-wrapper">
+
+            <?php
+            $select_products = $conn->prepare("SELECT * FROM `products` LIMIT 6");
+            $select_products->execute();
+            if ($select_products->rowCount() > 0) {
+               while ($fetch_product = $select_products->fetch(PDO::FETCH_ASSOC)) {
+                  ?>
+                  <form action="" method="post" class="swiper-slide slide">
+                     <input type="hidden" name="pid" value="<?= $fetch_product['id']; ?>">
+                     <input type="hidden" name="name" value="<?= $fetch_product['name']; ?>">
+                     <input type="hidden" name="price" value="<?= $fetch_product['price']; ?>">
+                     <input type="hidden" name="image" value="<?= $fetch_product['image_01']; ?>">
+                     <button class="fas fa-heart" type="submit" name="add_to_wishlist"></button>
+                     <a href="quick_view.php?pid=<?= $fetch_product['id']; ?>" class="fas fa-eye"></a>
+                     <img src="uploaded_img/<?= $fetch_product['image_01']; ?>" alt="">
+                     <div class="name">
+                        <?= $fetch_product['name']; ?>
+                     </div>
+                     <div class="flex">
+                        <div class="price"><span>$</span>
+                           <?= $fetch_product['price']; ?><span>/-</span>
+                        </div>
+                        <input type="number" name="qty" class="qty" min="1" max="99"
+                           onkeypress="if(this.value.length == 2) return false;" value="1">
+                     </div>
+                     <input type="submit" value="add to cart" class="btn" name="add_to_cart">
+                  </form>
+                  <?php
+               }
+            } else {
+               echo '<p class="empty">no products added yet!</p>';
+            }
+            ?>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
 
 
 
 
 
+   <?php include 'components/footer.php'; ?>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+   <script src="js/script.js"></script>
+
+   <script src="js/home.js"></script>
 
 
-<?php include 'components/footer.php'; ?>
+   <script>
 
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      /*var swiper = new Swiper(".home-slider", {
+         loop:true,
+         spaceBetween: 20,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable:true,
+          },
+      });*/
 
-<script src="js/script.js"></script>
 
-<script>
+      var swiper = new Swiper(".category-slider", {
+         loop: true,
+         spaceBetween: 20,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         breakpoints: {
+            0: {
+               slidesPerView: 2,
+            },
+            650: {
+               slidesPerView: 3,
+            },
+            768: {
+               slidesPerView: 4,
+            },
+            1024: {
+               slidesPerView: 5,
+            },
+         },
+      });
 
-/*var swiper = new Swiper(".home-slider", {
-   loop:true,
-   spaceBetween: 20,
-   pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-    },
-});*/
+      var swiper = new Swiper(".products-slider", {
+         loop: true,
+         spaceBetween: 20,
+         pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+         },
+         breakpoints: {
+            550: {
+               slidesPerView: 2,
+            },
+            768: {
+               slidesPerView: 2,
+            },
+            1024: {
+               slidesPerView: 3,
+            },
+         },
+      });
 
- var swiper = new Swiper(".category-slider", {
-   loop:true,
-   spaceBetween: 20,
-   pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-   },
-   breakpoints: {
-      0: {
-         slidesPerView: 2,
-       },
-      650: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      1024: {
-        slidesPerView: 5,
-      },
-   },
-});
+      var swiper = new Swiper('.home-slider', {
+         navigation: {
+            nextEl: '.swiper-pagination',
+            prevEl: '.swiper-pagination',
+         },
+         loop: true,
+         autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+         },
+      });
 
-var swiper = new Swiper(".products-slider", {
-   loop:true,
-   spaceBetween: 20,
-   pagination: {
-      el: ".swiper-pagination",
-      clickable:true,
-   },
-   breakpoints: {
-      550: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-   },
-});
-
-var swiper = new Swiper('.home-slider', {
-    navigation: {
-      nextEl: '.swiper-pagination',
-      prevEl: '.swiper-pagination',
-    },
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: true,
-  },
-  });
-
-</script>
+   </script>
 
 </body>
+
 </html>

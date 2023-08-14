@@ -1,5 +1,7 @@
 <?php
 
+use function PHPSTORM_META\type;
+
 include '../components/connect.php';
 
 session_start();
@@ -19,6 +21,14 @@ if (isset($_POST['add_product'])) {
    $price = filter_var($price, FILTER_SANITIZE_STRING);
    $details = $_POST['details'];
    $details = filter_var($details, FILTER_SANITIZE_STRING);
+
+   $type = filter_var($_POST['type'], FILTER_SANITIZE_STRING);
+   $category = filter_var($_POST['category'], FILTER_SANITIZE_STRING);
+   $address = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
+   $zip = filter_var($_POST['zip'], FILTER_SANITIZE_STRING);
+   $city = filter_var($_POST['city'], FILTER_SANITIZE_STRING);
+   $isBreakfast = filter_var($_POST['isBreakfast'], FILTER_SANITIZE_STRING);
+   $isParking = filter_var($_POST['isParking'], FILTER_SANITIZE_STRING);
 
    $image_01 = $_FILES['image_01']['name'];
    $image_01 = filter_var($image_01, FILTER_SANITIZE_STRING);
@@ -45,8 +55,8 @@ if (isset($_POST['add_product'])) {
       $message[] = 'product name already exist!';
    } else {
 
-      $insert_products = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03) VALUES(?,?,?,?,?,?)");
-      $insert_products->execute([$name, $details, $price, $image_01, $image_02, $image_03]);
+      $insert_products = $conn->prepare("INSERT INTO `products`(name, details, price, image_01, image_02, image_03, type, category, address, zip, city, isBreakfast, isParking) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+      $insert_products->execute([$name, $details, $price, $image_01, $image_02, $image_03, $type, $category, $address, $zip, $city, $isBreakfast, $isParking]);
 
       if ($insert_products) {
          if ($image_size_01 > 2000000 or $image_size_02 > 2000000 or $image_size_03 > 2000000) {
@@ -136,17 +146,17 @@ if (isset($_GET['delete'])) {
 
             <div class="inputBox">
                <span>Property Category</span>
-               <select name="type" id="type" class="box">
+               <select name="category" id="" class="box">
                   <option value="" disabled>selecty category</option>
-                  <option value="#">Guest House</option>
+                  <option value="Guest House">Guest House</option>
                   <option value="hotel">Hotel</option>
-                  <option value="#">Bed and breakfast</option>
-                  <option value="#">Hostel</option>
-                  <option value="#">Inn</option>
-                  <option value="#">Motel</option>
-                  <option value="#">Resort</option>
-                  <option value="#">Lodge</option>
-                  <option value="#">Other</option>
+                  <option value="Bed and breakfast">Bed and breakfast</option>
+                  <option value="Hostel">Hostel</option>
+                  <option value="Inn">Inn</option>
+                  <option value="Motel">Motel</option>
+                  <option value="Resort">Resort</option>
+                  <option value="Lodge">Lodge</option>
+                  <option value="Other">Other</option>
                </select>
             </div>
 
@@ -156,17 +166,17 @@ if (isset($_GET['delete'])) {
 
             <div class="inputBox-large">
                <span>Address</span>
-               <input type="text" class="box" placeholder="enter address of the property" name="price">
+               <input type="text" class="box" placeholder="enter address of the property" name="address">
             </div>
 
             <div class="inputBox">
                <span>Zip-Code</span>
-               <input type="text" class="box" placeholder="Postal Code">
+               <input type="text" class="box" placeholder="Postal Code" name="zip">
             </div>
 
             <div class="inputBox">
                <span>City</span>
-               <input type="text" class="box" placeholder="city name">
+               <input type="text" class="box" placeholder="city name" name="city">
             </div>
 
             <div class="detailBox">
@@ -189,16 +199,16 @@ if (isset($_GET['delete'])) {
             <div class="inputBox">
                <span>Is breakfast available in your place?</span>
                <div class="box">
-                  <input type="radio" name="#" id="#"> Yes <br>
-                  <input type="radio" name="#" id="#"> No<br>
+                  <input type="radio" name="isBreakfast" id="#" value="true"> Yes <br>
+                  <input type="radio" name="isBreakfast" id="#" value="false"> No<br>
                </div>
             </div>
 
             <div class="inputBox">
                <span>Is parking available?</span>
                <div class="box">
-                  <input type="radio" name="#" id="#"> Yes <br>
-                  <input type="radio" name="#" id="#"> No<br>
+                  <input type="radio" name="isParking" id="#" value="true"> Yes <br>
+                  <input type="radio" name="isParking" id="#" value="false"> No<br>
                </div>
             </div>
 

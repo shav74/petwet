@@ -40,6 +40,98 @@
   background-color: var(--main-color);
 }
 
+.title-main {
+  margin-top: 10vh;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #749354;
+}
+
+.title-sub {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+#search-des {
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.info {
+  margin-bottom: 2vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.book-info {
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 6vh;
+}
+
+.title-view-more {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  font-size: x-large;
+  margin-bottom: 2vh;
+  font-weight: 400;
+}
+
+.view-more {
+  font-size: medium;
+  color: #000000;
+  padding-left: 0.5vw;
+}
+
+.date-wrapper {
+  margin-top: 1vh;
+  display: flex;
+  max-width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
+}
+
+.date-wrapper .search-input {
+  background: #fff;
+  width: 28%;
+  position: relative;
+}
+
+.date-wrapper .search-icon {
+  width: 16%;
+  position: relative;
+}
+
+.date-wrapper .search-icon button {
+  background: #8fc658;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: none;
+}
+
+.search-input input {
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 0px 0 20px;
+  padding-right: 10px;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search- input.active input {
+  border-radius: 5px 5px 0 0;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -56,11 +148,17 @@ section {
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 2rem;
   color: var(--black);
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.heading-swipers {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 2rem;
 }
 
 .btn,
@@ -284,30 +382,16 @@ section {
 
 .category .slide {
   margin-bottom: 5rem;
-  /*box-shadow: var(--box-shadow);
-  border: var(--border);*/  
+  box-shadow: var(--box-shadow);
+  /* border: var(--border); */
   text-align: center;
   /*padding: 1rem;
-  background: var(--white);
-  border-radius: 0.5rem;*/
+  background: var(--white);*/
+  border-radius: 1rem;
 }
-/*.category .slide .TTK{
-  margin-bottom: 5rem;
-  /*box-shadow: var(--box-shadow);
-  border: var(--border); 
-  height: 300px;
-  width: 300px;
-  padding: 1rem;
-  background: var(--white);
-  border-radius: 0.5rem;
-}*/
 
 .category .slide:hover {
-  background-color: var(--black);
-}
-
-.category .slide:hover img {
-  filter: invert();
+  background-color: #749354;
 }
 
 .category .slide:hover h3 {
@@ -1044,7 +1128,7 @@ section {
   }
 
   .heading {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 
   .flex-btn {
@@ -1058,5 +1142,48 @@ section {
 
   .checkout-orders form .flex .inputBox {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .date-wrapper {
+    display: flex;
+    margin-top: 3vw;
+    margin-bottom: 0vh;
+    flex-direction: column;
+    max-width: 75vw;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .book-info {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 6vh;
+  }
+
+  .date-wrapper .search-input {
+    background: #fff;
+    width: 100%;
+    position: relative;
+  }
+
+  .date-wrapper .search-icon {
+    background: #acdc7c;
+    width: 100%;
+    height: 40px;
+  }
+
+  .date-wrapper .search-icon button {
+    font-size: 2rem;
+    background: #acdc7c;
+    width: 100%;
+    height: 100%;
+  }
+
+  #search-des {
+    font-size: 1.6rem;
   }
 }
