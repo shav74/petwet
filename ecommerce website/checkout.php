@@ -131,11 +131,13 @@ if (isset($_POST['order'])) {
             </div>
             <div class="inputBox">
                <span>Check In Date :</span>
-               <input type="text" name="flat" placeholder="e.g. flat number" class="box" maxlength="50" required>
+               <input name="date" type="text" onfocus="(this.type='date')" class="box" onblur="if(!this.value)this.type='text'"
+               placeholder="Check In">
             </div>
             <div class="inputBox">
                <span>Check out Date :</span>
-               <input type="text" name="street" placeholder="e.g. street name" class="box" maxlength="50" required>
+               <input name="date" type="text" onfocus="(this.type='date')" class="box" onblur="if(!this.value)this.type='text'"
+               placeholder="Check In">
             </div>
             <div class="inputBox">
                <span>City :</span>
@@ -143,14 +145,14 @@ if (isset($_POST['order'])) {
             </div>
             <div class="inputBox">
                <span>Check In Time :</span>
-               <input type="text" name="state" placeholder="" class="box" maxlength="50" required>
-            </div>
-            <div class="inputBox">
-               <span>No of People :</span>
-               <input type="text" name="country" placeholder="" class="box" maxlength="50" required>
+               <input type="time" name="state" placeholder="" class="box" maxlength="50" required>
             </div>
             <div class="inputBox">
                <span>Order Number :</span>
+               <input type="text" name="country" placeholder="" class="box" maxlength="50" required>
+            </div>
+            <div class="inputBox">
+               <span>Number Of People :</span>
                <input type="number" min="0" name="pin_code" placeholder="" min="0" max="999999"
                   onkeypress="if(this.value.length == 6) return false;" class="box" required>
             </div>
