@@ -468,10 +468,10 @@ section {
   line-height: 4.2rem;
   font-size: 2rem;
   background-color: var(--white);
-  border: var(--border);
-  border-radius: 0.5rem;
+  /* border: var(--border); */
+  border-radius: 1rem;
   text-align: center;
-  color: var(--black);
+  color: #749354;
   cursor: pointer;
   transition: 0.2s linear;
 }
@@ -486,7 +486,7 @@ section {
 
 .home-products .slide .fa-heart:hover,
 .home-products .slide .fa-eye:hover {
-  background-color: var(--black);
+  background-color: #749354;
   color: var(--white);
 }
 
