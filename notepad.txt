@@ -1,0 +1,7 @@
+type
+category
+address
+zip
+city
+isBreakfast
+isParking
